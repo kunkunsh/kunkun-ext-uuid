@@ -4,6 +4,10 @@
   "version": "0.0.1",
   "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kunkunsh/kunkun-ext-uuid"
+  },
   "kunkun": {
     "name": "UUID Generater",
     "shortDescription": "Generate UUID",
