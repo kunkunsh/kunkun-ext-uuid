@@ -1,0 +1,47 @@
+{
+  "$schema": "https://schema.kunkun.sh",
+  "name": "kunkun-ext-uuid",
+  "version": "0.0.8",
+  "license": "MIT",
+  "type": "module",
+  "kunkun": {
+    "name": "UUID Generater",
+    "shortDescription": "Generate UUID",
+    "longDescription": "Generate UUID",
+    "identifier": "kunkun-ext-uuid",
+    "permissions": [
+      "clipboard:write-text"
+    ],
+    "demoImages": [],
+    "icon": {
+      "type": "iconify",
+      "value": "tabler:code"
+    },
+    "headlessCmds": [
+      {
+        "name": "Generate UUID V4",
+        "main": "dist/index.js",
+        "cmds": []
+      }
+    ]
+  },
+  "scripts": {
+    "dev": "bun build.ts dev",
+    "build": "bun build.ts"
+  },
+  "dependencies": {
+    "@kksh/api": "0.1.3",
+    "i18next": "^23.15.1",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "./dist",
+    ".gitignore"
+  ]
+}
